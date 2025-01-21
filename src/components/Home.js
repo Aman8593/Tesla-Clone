@@ -1,13 +1,21 @@
 import React from 'react'
 import Section from './Section'
-
+import "../components/Home.scss"
 const Home = () => {
   return (
     <div className='container'>
+
       <Section
         title = "Model S"
         description = "Order Online for Delivery"
         backgroundImg = "/images/model-s.jpg"
+        leftButton = "Custom Order"
+        rightButton = "Existing Inventory"
+      />
+      <Section
+        title = "Model 3"
+        description = "Order Online for Delivery"
+        backgroundImg = "/images/model-3.jpg"
         leftButton = "Custom Order"
         rightButton = "Existing Inventory"
       />

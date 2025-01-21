@@ -1,5 +1,6 @@
 import React from "react";
 import "./Section.scss";
+import { Fade } from "react-awesome-reveal";
 const Section = ({
   title,
   description,
@@ -12,6 +13,7 @@ const Section = ({
       className="section"
       style={{ backgroundImage: `url("${backgroundImg}")` }}
     >
+      <Fade bottom >
       <div className="section-content-wrap">
         <h1>{title}</h1>
         <p>{description}</p>
@@ -29,6 +31,7 @@ const Section = ({
           alt="downArrow"
         />
       </div>
+      </Fade>
     </div>
   );
 };
